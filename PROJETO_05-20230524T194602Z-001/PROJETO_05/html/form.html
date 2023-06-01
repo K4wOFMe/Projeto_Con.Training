@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="../css/form.css">
+        <link rel="icon" type="image/x-icon" href="../img/ico/RPG-PNG-Photos.png"> 
+        
+        <title>Formulário</title>
+    </head>
+        <body>    
+            <div>
+                <header>    
+                    <input type="checkbox" id="check">
+                    <label for="check" id="icone">
+                        <img src="../img/giphy.gif" width="60x300">
+                    </label>
+                    
+                    <div class="barra">	
+                        <nav>
+                            <a href="home.html">
+                                <div class="link">
+                                    Retornar a página principal
+                                </div>
+                            </a>
+                            <a href="rpg_brasil.html">
+                                <div class="link">
+                                    Melhores sistemas Brasileiros
+                                </div>
+                            </a>
+                            <a href="https://www.significados.com.br/rpg/" target="_blank">
+                                <div class="link">
+                                    Veja mais em...
+                                </div>
+                            </a>
+                        </nav>
+                    </div>
+                </header>
+            </div>
+    
+        <div class="box">
+            <form action="">
+                <fieldset>
+                    <legend>
+                        <b>
+                            Fórmulário para adentrar no mundo do RPG
+                        </b>
+                    </legend>
+                    <br>
+           
+                    <div class="inputBox">
+                        <input type="text" name="nome" id="nome" class="inputUser" required autofocus>
+                        <label for="nome" class="labelInput">Nome completo</label>
+                    </div>
+                    
+                    <br><br>
+                    <div class="inputBox">
+                        <input type="text" name="email" id="email" class="inputUser" required>
+                        <label for="email" class="labelInput">Email</label>
+                    </div>
+                    <br><br>
+
+                    <div class="inputBox">
+                        <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                        <label for="telefone" class="labelInput">Telefone</label>
+                    </div>
+                    <p>Sexo:</p>
+                    <input type="radio" id="feminino" name="genero" value="feminino" required>
+                    <label for="feminino">Feminino</label>
+                    
+                    <br>
+                    <input type="radio" id="masculino" name="genero" value="masculino" required>
+                    <label for="masculino">Masculino</label>
+                    
+                    <br>
+                    <input type="radio" id="outro" name="genero" value="outro" required>
+                    <label for="outro">Outro</label>
+                    
+                    <br><br>
+                    
+                    <label for="data_nascimento"><b>Data de Nascimento:</b></label>
+                    <input type="date" name="data_nascimento" id="data_nascimento" required>
+                    <br><br><br>
+                    
+                    <div class="inputBox">
+                        <input type="text" name="cidade" id="cidade" class="inputUser" required>
+                        <label for="cidade" class="labelInput">Cidade</label>
+                    </div>
+                    
+                    <br><br>
+                    
+                    <div class="inputBox">
+                        <input type="text" name="estado" id="estado" class="inputUser" required>
+                        <label for="estado" class="labelInput">Estado</label>
+                    </div>        
+                    <br><br>
+                    <input type="submit" name="submit" id="submit">
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,137 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+	background-position: fixed;
+	color: #f4f4f9;
+    
+}
+#icone {
+	cursor: pointer;
+	padding: 15px;
+	position: fixed;
+	z-index: 1;
+}
+
+#check{
+	display: none;
+	background-color: #f00;
+}
+
+.barra{
+	
+	background-color: #333;
+	height: 100%;
+	width: 300px;
+	position: absolute;
+	left: -300px;
+	transition: all .2s linear;
+    flex: content;
+    display: grid;
+	position: fixed;
+}
+
+.barra .link{
+	
+	list-style: none;
+	background-color: #504f49;
+}
+.barra :hover{
+    visibility: visible;
+}
+nav{
+	width: 100%;
+	position: absolute;
+	top: 60px;
+}
+nav a{
+	text-decoration: none;
+}
+
+.link{
+	color: #f4f4f9;
+	font-family: 'Arial';
+	font-size: 12pt;
+	padding: 20px;
+	border-bottom: 2px solid #222;
+	transition:  all .2s linear;
+	opacity: 0;
+	margin-top: 200px;
+}
+.link:hover{
+	background-color: #050542;
+}
+
+#check:checked ~ .barra nav a .link{
+		opacity: 1;
+		margin-top: 0;
+		transition-delay: .2s;
+}
+#check:checked ~ .barra{
+		transform: translateX(300px);
+
+}
+.container{
+    padding: 10rem;
+	margin: 10rem;
+	max-width: 1000px;	
+	justify-self: center;
+	border: 50px;
+	border-color: red;
+}
+.container h1{
+	text-align: center;
+	text-decoration: underline;
+	color: #edf84d;
+}
+.container p:hover{
+	padding: 5rem;
+	background-color: #f4f4f9;
+	color: #000;
+	border-radius: 5rem;
+}
+.container img{
+	width: 50%;
+	height: 50%;
+	margin-left: 25%;
+	border-radius: 5rem;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+.topo{
+	background-image: url(../img/topo.jpg); 
+	padding: 10%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 2rem;
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+}
+.topo img{
+	width: 50rem;
+	height: 40rem;
+}
+.topo a{
+text-decoration: none;
+color: #000;
+}
+.topo a:hover{
+	background-color: #f4f4f9;
+	color: #000;
+	padding: 1rem;
+	border-radius: 2rem;
+}
+@media all and (max-width: 600px){
+	.topo{
+		visibility: collapse;
+	}
+	.container{
+		margin: 5px;
+		padding: 5px;
+	}
+}
